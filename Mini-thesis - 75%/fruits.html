@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="./fruits.css">
+  <link rel="icon" href="./favicon_io/favicon-32x32_F.png">
+  <title>Fruits</title>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">EQ-Right Brain</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Elective 1</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Back to home page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Types
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><span>...</span> Fruits section</li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./alphabet.html">Alphabet/Alpabeto</a></li>
+                <li><a class="dropdown-item btn-success" href="./color.html">Color/Kulay</a></li>
+                <li><a class="dropdown-item" href="./shape.html">Shapes/Hugis</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid" id="jumbotron">
+    <div class="container-fluid">
+      <h1 class="display-4">Fruits page!</h1>
+      <p class="lead">The sweet and fleshy product of a tree or other plant that contains seed and can be eaten as food.</p>
+    </div>
+  </div>
+
+  <div class="container" id="conButton">
+    <div class="column">
+      <button type="button" class="btn btn-success" onclick="tagBtn()">Tagalog</button>
+      <button type="button" class="btn btn-success" onclick="engBtn()">English</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/fruits/banana.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="bananaTitle">Banana</h5>
+            <p class="card-text" id="bananaTxt">a long curved fruit which grows in clusters and has soft pulpy flesh and yellow skin when ripe.</p>
+            <a href="#" class="btn btn-primary" id="banana" onclick="banana()">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/fruits/blueberry.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="blueberryTitle">Blueberry</h5>
+            <p class="card-text" id="blueberryTxt">It comes from a shrub called myrtus which produces fruits similar to blueberries of the genus vaccinium. </p>
+            <a href="#" class="btn btn-primary" id="blueberry" onclick="berryblue()">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/fruits/cherry.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="cherryTitle">Cherry</h5>
+            <p class="card-text" id="cherryTxt">A small, round stone fruit that is typically bright or dark red and they are always greater than 10.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/fruits/dragonfruit.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="dragonfruitTitle">Dragon fruit</h5>
+            <p class="card-text" id="dragonfruitTxt">The growers of dragon fruit in the province prefer to call the dragon fruit, meaning light and wealth.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/fruits/elena-koycheva-y-feJOQIBao-unsplash.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="watermelonTitle">Watermelon</h5>
+            <p class="card-text" id="watermelonTxt">A large oblong or roundish fruit with a hard green or white rind often striped or variegated.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/fruits/grapes.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="grapesTitle">Grapes</h5>
+            <p class="card-text" id="grapesTxt">Typically green, purple, red, black, growing in a grapevine, eaten as fruit, & used in making wine.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/fruits/kiwi.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="kiwiTitle">Kiwi</h5>
+            <p class="card-text" id="kiwiTxt">One of the most delicious fruits in the world. The name “Kiwi” means “strange” in Hong Kong and Taiwan.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/fruits/lemon.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="lemonTitle">Lemon</h5>
+            <p class="card-text" id="lemonTxt"> Fruit of the lemon tree, light yellow fruit with an acidic and saliva dropping taste.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/fruits/orange.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="orangeTitle">Orange</h5>
+            <p class="card-text" id="orangeTxt">A round juicy citrus fruit with a tough bright reddish-yellow color like that of the skin of an orange.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/fruits/payaya.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="papayaTitle">Papaya</h5>
+            <p class="card-text" id="papayaTxt">A tropical fruit shaped like an elongated melon, with edible orange flesh and small black seeds.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/fruits/pears.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="pearsTitle">Pears</h5>
+            <p class="card-text" id="pearsTxt">A yellowish or brownish-green edible fruit that is typically narrow at the stalk and wider toward the base.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/fruits/pineapple.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="pineappleTitle">Pineapple</h5>
+            <p class="card-text" id="pineappleTxt">Pineapples are also secret symbols for swingers, so the wearer could be a swinger.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/fruits/strawberry.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="strawberryTitle">Strawberry</h5>
+            <p class="card-text" id="strawberryTxt">A strawberry is defined as “the juicy edible usually red fruit of any several low-growing temperature.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="./fruits.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="./shape.css">
+  <link rel="icon" href="./favicon_io/favicon-32x32_S.png">
+  <title>Shape</title>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">EQ-Right Brain</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Elective 1</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Back to home page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Types
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><span>...</span> Shape section</li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./alphabet.html">Alphabet/Alpabeto</a></li>
+                <li><a class="dropdown-item btn-success" href="./fruits.html">Fruits/Prutas</a></li>
+                <li><a class="dropdown-item" href="./color.html">Color/Kulay</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid" id="jumbotron">
+    <div class="container-fluid">
+      <h1 class="display-4">Shape page!</h1>
+      <p class="lead">The external form, contours, or outline of someone or something and a geometric figure such as a square, triangle, or rectangle.</p>
+    </div>
+  </div>
+
+  <div class="container" id="conButton">
+    <div class="column">
+      <button type="button" class="btn btn-success" onclick="tagBtn()">Tagalog</button>
+      <button type="button" class="btn btn-success" onclick="engBtn()">English</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/shapes/circle.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="circleTitle">Circle</h5>
+            <p class="card-text" id="circleTxt">A round plane figure whose boundary consists of points equidistant from a fixed point.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/shapes/diamond.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="diamondTitle">Diamond</h5>
+            <p class="card-text" id="diamondTxt">A figure with four straight sides of equal length forming acute angles and two opposite obtuse angles.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  .<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/shapes/oval.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="ovalTitle">Oval</h5>
+            <p class="card-text" id="ovalTxt">Having a rounded and slightly elongated outline or shape like that of an egg.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/shapes/rectangle.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="rectangleTitle">Rectangle</h5>
+            <p class="card-text" id="rectangleTxt">A plane figure with four straight sides and four right angles, in contrast to a square.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  .<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/shapes/square.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="squareTitle">Square</h5>
+            <p class="card-text" id="sqaureTxt">A plane figure with four equal straight sides and four right angles.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/shapes/star.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="starTitle">Star</h5>
+            <p class="card-text" id="starTxt">The star shapealso has the meaning of "to light up the future."</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./shape.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

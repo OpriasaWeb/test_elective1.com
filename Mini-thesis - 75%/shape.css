@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: #75a14c;
+}
+
+
+#jumbotron{
+    padding-top: 3.5rem;
+}
+
+#conButton{
+    padding: 1rem;
+}
+
+#conButton button{
+    float: left;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container .card{
+    margin-bottom: 1rem;
+}
+
+.inner{
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.inner img{
+    transition: all 1s ease;
+}
+
+.inner:hover img{
+    transform: scale(1.2);
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+    .col-sm-6{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .col-sm-6{
+        margin-left: .5rem;
+    }
+}
+
+

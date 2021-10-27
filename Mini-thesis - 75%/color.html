@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="./color.css">
+  <link rel="icon" href="./favicon_io/favicon-32x32_C.png">
+  <title>Color</title>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">EQ-Right Brain</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Elective 1</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Back to home page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html" target="_blank">About us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Types
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><span>...</span> Color section</li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./alphabet.html">Alphabet/Alpabeto</a></li>
+                <li><a class="dropdown-item btn-success" href="./fruits.html">Fruits/Prutas</a></li>
+                <li><a class="dropdown-item" href="./shape.html">Shapes/Hugis</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid" id="jumbotron">
+    <div class="container-fluid">
+      <h1 class="display-4">Color page!</h1>
+      <p class="lead">Color means many different things to differ people and cultures. We all have our own favorite colors. People like different colors like they like different foods. Color also represents feelings, people, countries, cultures, and color symbolism.</p>
+    </div>
+  </div>
+
+  <div class="container" id="conButton">
+    <div class="column">
+      <button type="button" class="btn btn-success" id="tagalogBtn" onclick="tagalogButton()">Tagalog</button>
+      <button type="button" class="btn btn-success" id="englistBtn" onclick="englishButton()">English</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/colors/blue.jpg" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="blueName">Blue</h5>
+            <p class="card-text" id="blueDemo">A color intermediate between green and violet, as of the sky or sea on a sunny day.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/colors/brownnnn.PNG" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="brownName">Brown</h5>
+            <p class="card-text" id="brownDemo">A color produced by mixing red, yellow, and blue, as of dark woord or rich soil.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/colors/grayyyy.PNG" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="grayName">Gray</h5>
+            <p class="card-text" id="grayDemo">A color of intelect and of compromise. It is a diplomatic color between black and white.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/colors/greennnnn.PNG" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="greenName">Green</h5>
+            <p class="card-text" id="greenDemo">A color between blue and yellow in the spectrum; colored like grass or emeralds.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/colors/orangeee.PNG" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="orangeName">Orange</h5>
+            <p class="card-text" id="orangeDemo">A yellow-reddish in color as well as color made by mixing red and yellow.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/colors/pinkkk.PNG" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="pinkName">Pink</h5>
+            <p class="card-text" id="pinkDemo">A color intermediate between red and white, as of coral or salmon. The best condition or degree.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/colors/reddddd.PNG" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="redName">Red</h5>
+            <p class="card-text" id="redDemo">A color at the end of the spectrum next to orange and opposite violet, as of blood, fire, or rubies.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/colors/violettttt.PNG" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="violetName">Violet</h5>
+            <p class="card-text" id="violetDemo">A bluish-purple color seen at the end of the spectrum opposite red.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <div class="inner">
+            <img src="./products/colors/yellowww.PNG" height="200px" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" id="yellowName">Yellow</h5>
+            <p class="card-text" id="yellowDemo">A color between green and orange in the spectrum, colored like ripe lemons or egg yolks.</p>
+            <a href="#" class="btn btn-primary">Sounds up!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="./color.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
